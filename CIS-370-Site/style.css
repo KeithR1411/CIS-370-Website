@@ -1,17 +1,39 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 /* Custom font implementation */
 @font-face { font-family: Flix; src: url("fonts/Flix-Normal.otf")}
 
 body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     /* Set the body font to Calisto MT, with 'ghostwhite' as the font color. */
     font-family: Calisto MT;
     color: ghostwhite;
 }
+
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    background: #670213;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 /* Background Gradient */
 .bg-grad {
